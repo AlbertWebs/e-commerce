@@ -1367,12 +1367,7 @@ public function edit_Product(Request $request, $id){
     $path = 'uploads/product';
     $slung = Str::slug($request->name);
     if(isset($request->image_one)){
-        $fileSize = $request->file('image_one')->getClientSize();
-            if($fileSize>=1800000){
-            Session::flash('message', "File Exceeded the maximum allowed Size");
-            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
-            return Redirect::back();
-            }else{
+
                 $file = $request->file('image_one');
                 /** Renaming Edits */
                 $extension = $file->getClientOriginalExtension();
@@ -1382,7 +1377,7 @@ public function edit_Product(Request $request, $id){
                 /* Renaming Edits Ends*/
 
 
-            }
+
     }else{
         $image_one = $request->image_one_cheat;
     }
@@ -1391,12 +1386,6 @@ public function edit_Product(Request $request, $id){
     // die();
 
     if(isset($request->image_two)){
-        $fileSize = $request->file('image_two')->getClientSize();
-         if($fileSize>=1800000){
-            Session::flash('message_image_two', "File Exceeded the maximum allowed Size");
-            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
-
-         }else{
 
             $file = $request->file('image_two');
             /** Renaming Edits */
@@ -1408,19 +1397,14 @@ public function edit_Product(Request $request, $id){
             /* Renaming Edits Ends*/
 
 
-         }
+
     }else{
         $image_two = $request->image_two_cheat;
     }
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
-        if($fileSize>=1800000){
-           Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
-           Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
 
-        }else{
 
             $file = $request->file('image_three');
             /** Renaming Edits */
@@ -1430,7 +1414,7 @@ public function edit_Product(Request $request, $id){
             $file->move($path, $image_three);
             /* Renaming Edits Ends*/
 
-        }
+
     }else{
         $image_three = $request->image_three_cheat;
     }
