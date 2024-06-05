@@ -187,7 +187,7 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
 
     Route::group(['prefix'=>'admin'], function(){
 
-        Route::get('/home', [HomeController::class, 'adminHome'])->name('admin.home');
+        Route::get('/home', [AdminsController::class, 'index'])->name('admin.home');
         //Login route
         Route::get('/', [AdminsController::class, 'index'])->name('admin.index');
 
