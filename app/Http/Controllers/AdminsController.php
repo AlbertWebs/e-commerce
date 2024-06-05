@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Support\Facades\Redirect;
 
+use Illuminate\Support\Str;
+
 use Storage;
 
 use Mail;
@@ -1231,7 +1233,7 @@ public function addProduct(){
 }
 
 public function add_Product(Request $request){
-    $slung = str_slug($request->name);
+    $slung = Str::slug($request->name);
     $path = 'uploads/product';
     if(isset($request->image_one)){
         $fileSize = $request->file('image_one')->getClientSize();
@@ -1295,7 +1297,7 @@ public function add_Product(Request $request){
     }
     //Additional images
 
-    $slung = str_slug($request->name);
+    $slung = Str::slug($request->name);
     $Product = new Product;
     $Product->name = $request->name;
     $Product->slung = $slung;
@@ -1363,7 +1365,7 @@ public function edit_Product_Details(Request $request, $id){
 public function edit_Product_slung(){
     $variable = DB::table('product')->get();
     foreach ($variable as $key => $value) {
-        $slung = str_slug($value->name);
+        $slung = Str::slug($value->name);
         $updateDetails = array(
 
             'slung' => $slung,
@@ -1378,7 +1380,7 @@ public function edit_Product_slung(){
 
 public function edit_Product(Request $request, $id){
     $path = 'uploads/product';
-    $slung = str_slug($request->name);
+    $slung = Str::slug($request->name);
     if(isset($request->image_one)){
         $fileSize = $request->file('image_one')->getClientSize();
             if($fileSize>=1800000){
@@ -3527,7 +3529,7 @@ public function approveInvoice($id){
     foreach($Experience as $Experiences)
     {
         $title = $Experiences->cat;
-        $slung = str_slug($title);
+        $slung = Str::slug($title);
         $updateDetails = array(
             'slung' => $slung,
         );
