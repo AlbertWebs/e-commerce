@@ -10,8 +10,8 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
    {{-- <meta name="keywords" content="{{$keywords}}"/> --}}
    {!! SEOMeta::generate() !!}
-   <meta property="og:description" content="Rick Electronics, Smart TVs in Nairobi, Photocopy Machines, Desktops In Kenya, Laptops in Nairobi, Ex-UK Laptops">
-   <meta property="og:image" content="{{url('/')}}/uploads/logo/{{$Settings->logo}}" />
+   <meta property="og:description" content="Rick Electronics, Smart TVs in Nairobi, Affordable Laptops, Smartphones In Kenya, Cookers in Nairobi, Microwaves">
+   <meta property="og:image" content="https://rickelectronics.co.ke/uploads/product/vitron-65-inch-smart-4k-webos-tv-001.jpg" />
    <meta property="fb:app_id" content="350937289315471" />
    {!! OpenGraph::generate() !!}
    {!! Twitter::generate() !!}

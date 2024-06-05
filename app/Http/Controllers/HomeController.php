@@ -38,10 +38,10 @@ class HomeController extends Controller
         $SEOSettings = DB::table('seosettings')->get();
         foreach ($SEOSettings as $Settings) {
             SEOMeta::setTitle(' ' . $Settings->sitename . ' - ' . $Settings->intro . '');
-            SEOMeta::setDescription('Rick Electronics, Printers in Nairobi, Photocopy Machines, Desktops In Kenya' . $Settings->welcome . '');
+            SEOMeta::setDescription('Rick Electronics, Smart TVs in Nairobi, Affordable Laptops, Smartphones In Kenya, Cookers in Nairobi, Microwaves');
             SEOMeta::setCanonical('' . $Settings->url . '');
             OpenGraph::setDescription('' . $Settings->welcome . '');
-            OpenGraph::setTitle('' . $Settings->sitename . ' - ' . $Settings->welcome . 'Printers in Nairobi, Photocopy Machines, Desktops In Kenya, Laptops in Nairobi, Ex-UK Laptops');
+            OpenGraph::setTitle('' . $Settings->sitename . ' - ' . $Settings->welcome . ' Smart TVs in Nairobi, Affordable Laptops, Smartphones In Kenya, Cookers in Nairobi, Microwaves');
             OpenGraph::setUrl('' . $Settings->url . '');
             OpenGraph::addProperty('type', 'website');
             Twitter::setTitle('' . $Settings->sitename . '' );
