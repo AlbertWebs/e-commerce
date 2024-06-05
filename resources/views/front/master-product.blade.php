@@ -420,7 +420,8 @@
                            <i class="ion-ios-location-outline"></i>
                         </span>
                         <div class="media-body">
-                           <h4 class="title">4710-4890 Moi Avenue , Popman House</h4>
+                           <h4 class="title">
+Jitihada Mall, Taveta Road, Shop F25 Second Floor</h4>
                            <p class="text">Contact Info!</p>
                         </div>
                      </div>
