@@ -13,8 +13,8 @@
           <div class="row align-items-end">
              <div class="col-sm-10 col-md-9 col-lg-5 col-xl-5">
                 <div class="section-title pb-4 pb-md-4 position-relative">
-                   <h2 class="title">New Arrivals</h2>
-                   <p class="text">Offers valid for a limited time</p>
+                   <h2 class="title">Trendy Picks</h2>
+                   <p class="text">We have handpicked these just for you</p>
                 </div>
              </div>
              <div class="col-sm-3 col-md-3 col-lg-7 col-xl-6">
