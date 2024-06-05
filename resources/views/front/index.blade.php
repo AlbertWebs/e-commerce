@@ -124,7 +124,7 @@
 
                 <!-- slider-item end -->
                 <div class="slider-item">
-                   <?php $Category = DB::table('category')->where('id','6')->get(); ?>
+                   <?php $Category = DB::table('category')->where('id','1')->get(); ?>
                    @foreach ($Category as $item)
                    <div class="slider-list mb-3rem">
                     <div class="media style bg-lighten p-15 align-items-center">
@@ -219,7 +219,7 @@
                      </div>
                      @endforeach
 
-                     <?php $Category = DB::table('category')->where('id','7')->get(); ?>
+                     <?php $Category = DB::table('category')->where('id','6')->get(); ?>
                      @foreach ($Category as $item)
                      <div class="slider-list">
                         <div class="media style bg-lighten p-15 align-items-center">
