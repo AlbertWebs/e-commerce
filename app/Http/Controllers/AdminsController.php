@@ -1267,7 +1267,6 @@ public function add_Product(Request $request){
 
 
     if(isset($request->image_three)){
-        $fileSize = $request->file('image_three')->getClientSize();
 
 
             $file = $request->file('image_three');
