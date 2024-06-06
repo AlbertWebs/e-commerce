@@ -106,7 +106,7 @@
                   <!-- Email -->
                   <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
 
-                                <input placeholder="juliekoi@gmail.com" id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
+                                <input placeholder="admin@rickelectronics.com" id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
 
                                 @if ($errors->has('email'))
                                     <span class="help-block">
