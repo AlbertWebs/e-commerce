@@ -861,7 +861,7 @@ class HomeController extends Controller
         Session::forget('Category');
         $SEOSettings = DB::table('seosettings')->get();
         foreach ($SEOSettings as $Settings) {
-            SEOMeta::setTitle(' '.$title.' Accessories in Kenya | ' . $Settings->sitename .'');
+            SEOMeta::setTitle(' '.$title.' Electronics in Kenya | ' . $Settings->sitename .'');
             SEOMeta::setDescription('Rick Electronics Brands');
             SEOMeta::setCanonical('' . $Settings->url . 'products/brand/'.$title.'');
             OpenGraph::setDescription('' . $Settings->welcome . '');
@@ -876,7 +876,7 @@ class HomeController extends Controller
             $search_results ='';
             $search_results_category = '';
             $Products = DB::table('product')->where('brand',$title)->paginate(24);
-            $keywords = ''.$title.' Accessories in Kenya';
+            $keywords = ''.$title.' Electronics in Kenya';
             return view('front.productss', compact('keywords','page_title', 'Products', 'page_name','search_results','search_results_category'));
     }
 }
