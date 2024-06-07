@@ -102,8 +102,8 @@
       </div>
       <nav class="offcanvas-menu">
          <ul>
-            <li><a href="#"><span class="menu-text">Home</span></a></li>
-            <?php $AllCategories = DB::table('category')->limit(6)->get(); ?>
+            <li><a href="{{url('/')}}"><span class="menu-text">Home</span></a></li>
+            <?php $AllCategories = DB::table('category')->limit(7)->get(); ?>
             @foreach ($AllCategories as $category)
               <li><a href="{{url('/')}}/products/{{$category->slung}}"><span class="menu-text">{{$category->cat}}</span></a></li>
             @endforeach
