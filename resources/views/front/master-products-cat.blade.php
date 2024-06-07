@@ -338,7 +338,7 @@
                         <a href="{{url('/')}}">Home <i class="ion-ios-home"></i></a>
 
                      </li>
-                     <?php $AllCategories = DB::table('category')->limit(5)->get(); ?>
+                     <?php $AllCategories = DB::table('category')->limit(7)->get(); ?>
                      @foreach ($AllCategories as $category)
                        <li class=" ml-0"><a href="{{url('/')}}/products/{{$category->slung}}">{{$category->cat}}</a></li>
                      @endforeach
