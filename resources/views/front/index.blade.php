@@ -632,15 +632,15 @@
           <div class="col-12 col-md-6 col-lg-auto mb-3">
              <div class="social-network">
                 <ul class="d-flex">
-                   <li><a href="{{$Settings->facebook}}" target="_blank"><span
-                            class="ion-social-facebook"></span></a></li>
-                   <li><a href="{{$Settings->twitter}}" target="_blank"><span class="ion-social-twitter"></span></a>
-                   </li>
-                   <li><a href="{{$Settings->youtube}}" target="_blank"><span class="ion-social-youtube"></span></a>
-                   </li>
-                   {{-- <li><a href="https://plus.google.com/" target="_blank"><span class="ion-social-google"></span></a>
+                   <li><a href="https://www.facebook.com/rickelectronics/" target="_blank"><span
+                            class="fa-brands fa-facebook"></span></a></li>
+                   {{-- <li><a href="{{$Settings->twitter}}" target="_blank"><span class="ion-social-twitter"></span></a>
                    </li> --}}
-                   <li class="mr-0"><a href="{{$Settings->instagram}}" target="_blank"><span
+                   <li><a href="https://www.tiktok.com/@rickelectronics?_t=8r6VN76BG5e&_r=1" target="_blank"><span class="fa-brands fa-tiktok"></span></a>
+                   </li>
+                   <li><a href="https://api.whatsapp.com/send?phone=254721286034" target="_blank"><span class="fa-brands fa-whatsapp"></span></a>
+                   </li>
+                   <li class="mr-0"><a href="https://www.instagram.com/rickelectronics/" target="_blank"><span
                             class="ion-social-instagram"></span></a></li>
                 </ul>
              </div>
