@@ -62,6 +62,8 @@
    <link rel="stylesheet" href="{{asset('theme/assets/css/plugins.min.css')}}" />
    <link rel="stylesheet" href="{{asset('theme/assets/css/style.min.css')}}" />
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+   <!--Floating WhatsApp css-->
+   <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
 
     {{--  --}}
 
@@ -82,6 +84,8 @@
 </head>
 
 <body>
+    <!--Div where the WhatsApp will be rendered-->
+    <div style="z-index:100000" id="WAButton"></div>
    <!-- offcanvas-overlay start -->
    <div class="offcanvas-overlay"></div>
    <!-- offcanvas-overlay end -->
@@ -821,6 +825,26 @@
 
 </script>
 {{-- Update User Info --}}
+
+ <!--Floating WhatsApp javascript-->
+ <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
+ <script type="text/javascript">
+     $(function () {
+         $('#WAButton').floatingWhatsApp({
+             phone: '+254721286034', //WhatsApp Business phone number
+             headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+             popupMessage: 'Hello, how can we help you?', //Popup Message
+             message: 'I have just visited *rickelectronics.co.ke*',
+             showPopup: true, //Enables popup display
+             buttonImage: '<img src="https://amanivehiclesounds.co.ke/uploads/icon/whatsapp.svg" />', //Button Image
+             //headerColor: 'crimson', //Custom header color
+             //backgroundColor: 'crimson', //Custom background button color
+             position: "left" //Position: left | right
+
+         });
+     });
+ </script>
 
 
 </body>
