@@ -563,3 +563,10 @@ Route::middleware(['auth', 'user-access:manager'])->group(function () {
 
     Route::get('/manager/home', [HomeController::class, 'managerHome'])->name('manager.home');
 });
+
+
+Route::get('/sitemap.xml', function () {
+    return response()->file(public_path('sitemap.xml'), [
+        'Content-Type' => 'application/xml'
+    ]);
+});
